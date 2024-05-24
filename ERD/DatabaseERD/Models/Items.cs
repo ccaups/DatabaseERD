@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace DatabaseERD.Models
 {
-    public class Items
+    public class Item
     {
         [Key]
         public Guid ItemID { get; set; }

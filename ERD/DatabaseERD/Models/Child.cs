@@ -5,11 +5,13 @@ namespace DatabaseERD.Models
 {
     public class Child
     {
-        [Key]
-        public Guid ChildID { get; set; }
+        [Key] // Marks ChildID as the primary key
+        public Guid ChildID { get; set; } = Guid.NewGuid(); // Auto-generate a GUID for new children
 
-        [ForeignKey("Employee")]
-        public Guid EmployeeID { get; set; }
+        // Foreign Key (FK) Relationship
+        public Guid EmployeeID { get; set; } // Data type should match the Employee table's primary key
+        [ForeignKey("EmployeeID")]  // Specifies the relationship to the Employee table
+        public virtual Employee Employee { get; set; }  // Navigation property for accessing the related Employee
 
         public string PersonalCode { get; set; }
 

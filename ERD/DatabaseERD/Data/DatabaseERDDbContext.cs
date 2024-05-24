@@ -1,6 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using DatabaseERD.Models;
 using Azure.Core;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
+
 
 namespace DatabaseERD.Data
 {
@@ -17,9 +19,7 @@ namespace DatabaseERD.Data
         public DbSet<Child> Children { get; set; }
         public DbSet<AccessPermission> AccessPermissions { get; set; }
         public DbSet<ItemLoan> ItemLoans { get; set; }
-        public DbSet<Items> Items { get; set; }
+        public DbSet<Item> Items { get; set; }
         public DbSet<LeaveRequest> LeaveRequests { get; set; }
-
-
     }
 }
