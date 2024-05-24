@@ -1,7 +1,8 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using DatabaseERD.Data;
+using DatabaseERD.Models;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using StoredProcTARge23.Data;
-using StoredProcTARge23.Models;
+
 
 namespace StoredProcedureTARge23.Controllers
 {
