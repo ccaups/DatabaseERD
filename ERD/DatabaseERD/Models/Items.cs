@@ -16,9 +16,8 @@ namespace DatabaseERD.Models
 
         public DateTime PurchasedDate { get; set; }
 
-        public DateTime LiquidationDate { get; set;]
+        public DateTime LiquidationDate { get; set; }
 
         public string Description { get; set;}
-    }
     }
 }
